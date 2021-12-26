@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&family=Roboto+Condensed:ital,wght@0,300;1,700&display=swap');
+:root{
+    --base-yellow:#f39120;
+    --yellow:#f27814;
+
+}
+  
+body{
+    align-items: center;
+    justify-content: center;
+    background:  var(--base-yellow);
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    color: black;
+}
+.pw-container{
+    background-color:var(--yellow);
+    min-width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    border-radius: 1.5rem;
+}
+.pw-header{
+    padding: 0.5rem;
+}
+.pw{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    height: 20px;
+    position: relative;
+    background-color: var(--base-yellow);
+    
+}
+.pw button{
+    border: none;
+    padding: 0.25rem;
+    font-weight: bold;
+    background-color: var(--yellow);
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    transform: translate(0, 20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+    
+}
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0, 0%);
+    font-size: 1rem;
+    background-color:var(--yellow) ;
+}
+.pw-body input{
+    cursor: pointer;
+}
+.generate {
+    background-color: var(--base-yellow);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    font-weight: bold;
+}
+.pw-body {
+    padding: 0 1rem 1rem;
+   
+}
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
